@@ -1128,10 +1128,6 @@ i {
       font-family: 'Rubik', sans-serif;
       font-size: 16px; }
 
-
-
-
-      
 #footerSection:before {
   content: "";
   position: absolute;
@@ -1142,58 +1138,7 @@ i {
   background: url(../img/footer.png);
   background-repeat: no-repeat;
   background-position: center; }
-#pageHeader-team {
-  background: url(../img/team.jpg);
-  background-size: cover;
-  background-position: center top;
-  margin-bottom: 100px; }
-  #pageHeader-team .overlay {
-    background: rgba(34, 34, 34, 0.8);
-    padding: 180px 0 80px 0; }
-  #pageHeader-team .sec-header {
-    margin-bottom: 50px; }
-    #pageHeader-team .sec-header h2 {
-      color: #fff;
-      margin-bottom: 15px; }
-      #pageHeader-team .sec-header h2 span {
-        color: #fb383b; }
-    #pageHeader-team .sec-header p {
-      color: #fb383b; }
-      #pageHeader-team .sec-header p a {
-        color: #fff;
-        text-decoration: none;
-        transition: .4s; }
-      #pageHeader-team .sec-header p a:hover {
-        color: #fb383b; }
-      #pageHeader-team .sec-header p span {
-        color: #fff;
-        margin: 0 5px; }  
-#pageHeader-about {
-  background: url(../img/header1.jpg);
-  background-size: cover;
-  background-position: center top;
-  margin-bottom: 100px; }
-  #pageHeader-about .overlay {
-    background: rgba(34, 34, 34, 0.8);
-    padding: 180px 0 80px 0; }
-  #pageHeader-about .sec-header {
-    margin-bottom: 50px; }
-    #pageHeader-about .sec-header h2 {
-      color: #fff;
-      margin-bottom: 15px; }
-      #pageHeader-about .sec-header h2 span {
-        color: #fb383b; }
-    #pageHeader-about .sec-header p {
-      color: #fb383b; }
-      #pageHeader-about .sec-header p a {
-        color: #fff;
-        text-decoration: none;
-        transition: .4s; }
-      #pageHeader-about .sec-header p a:hover {
-        color: #fb383b; }
-      #pageHeader-about .sec-header p span {
-        color: #fff;
-        margin: 0 5px; }
+
 #pageHeader {
   background: url(../img/home-bg.jpg);
   background-size: cover;
@@ -1392,86 +1337,3 @@ i {
       margin-right: 0px; }
     #featureSection .col-lg-7 .img-box .img02 {
       width: 90%; } }
-.teamrow {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2em 1em;
-  text-align: center;
-}
-.teamcolumn {
-  width: 100%;
-  padding: 0.5em 0;
-}
-.h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 3.5em;
-  color: #1f003b;
-}
-.teamcard {
-  box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
-  padding: 3.5em 1em;
-  border-radius: 0.6em;
-  color: #1f003b;
-  cursor: pointer;
-  transition: 0.3s;
-  background-color: #ffffff;
-}
-.teamcard .teamimg-container {
-  width: 8em;
-  height: 8em;
-  background-color: #fb383b;
-  padding: 0.5em;
-  border-radius: 50%;
-  margin: 0 auto 2em auto;
-}
-.teamcard .teamimg {
-  width: 100%;
-  border-radius: 50%;
-}
-.teamcard h3 {
-  font-weight: 500;
-}
-.teamcard p {
-  font-weight: 300;
-  text-transform: uppercase;
-  margin: 0.5em 0 2em 0;
-  letter-spacing: 2px;
-}
-.teamicons {
-  width: 50%;
-  min-width: 180px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-.teamcard a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 1.4em;
-}
-.teamcard:hover {
-  background: linear-gradient( #f06062, #fb383b);
-  color: #ffffff;
-}
-.teamcard:hover .teamimg-container {
-  transform: scale(1.15);
-}
-@media screen and (min-width: 768px) {
-  .section1 {
-    padding: 1em 7em;
-  }
-}
-@media screen and (min-width: 992px) {
-  .section1 {
-    padding: 1em;
-  }
-  .teamcard {
-    padding: 2em 1em;
-  }
-  .teamcolumn {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 0 1em;
-  }
-}
