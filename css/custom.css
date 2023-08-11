@@ -15,18 +15,20 @@ h1, h2, h3, h4, h5 {
   line-height: .9; }
 
 h1 {
-  font-size: 120px; }
-
+  font-size: 70px; }
+p {
+  font-size: 15px;
+}
 h2 {
-  font-size: 70px;
+  font-size: 30px;
   font-weight: 500; }
 
 h3 {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 400; }
 
 h4 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400; }
 
 h5 {
