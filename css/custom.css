@@ -1163,6 +1163,33 @@ i {
         color: #fff;
         margin: 0 5px; }
 
+#pageHeader-about {
+  background: url(../img/home-bg.jpg);
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 100px; }
+  #pageHeader-about .overlay {
+    background: rgba(34, 34, 34, 0.8);
+    padding: 180px 0 80px 0; }
+  #pageHeader-about .sec-header {
+    margin-bottom: 50px; }
+    #pageHeader-about .sec-header h2 {
+      color: #fff;
+      margin-bottom: 15px; }
+      #pageHeader-team .sec-header h2 span {
+        color: #fb383b; }
+    #pageHeader-team .sec-header p {
+      color: #fb383b; }
+      #pageHeader-about .sec-header p a {
+        color: #fff;
+        text-decoration: none;
+        transition: .4s; }
+      #pageHeader-about .sec-header p a:hover {
+        color: #fb383b; }
+      #pageHeader-about .sec-header p span {
+        color: #fff;
+        margin: 0 5px; }
+
 
 #pageHeader {
   background: url(../img/home-bg.jpg);
