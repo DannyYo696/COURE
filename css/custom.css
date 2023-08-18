@@ -1584,7 +1584,18 @@ i {
           padding: 0 1em;
         }
       }
-      
+.dark-class #featureSection .img-box img {
+  filter: grayscale(0%);
+}
+.dark-class #featureSection .txt-box h2 {
+  color: rgba(255, 255, 255, 0.719);
+}
+.dark-class #featureSection .txt-box p {
+  color: rgba(255, 255, 255, 0.719);
+}    
+.dark-class #featureSection .txt-box li {
+  color: rgba(255, 255, 255, 0.719);
+}  
 .dark-class #specialFeature {
         background: black;
         overflow: hidden;
