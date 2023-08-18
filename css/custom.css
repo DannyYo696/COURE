@@ -1129,6 +1129,9 @@ i {
   background: #222429;
   position: relative;
   padding-top: 160px; }
+#footerSection .row {
+  justify-content: space-between;
+}
   #footerSection .footer-box .logo {
     font-size: 38px;
     font-weight: bold;
@@ -1525,7 +1528,7 @@ i {
       }
       .teamcard .teamimg-container {
         width: 8em;
-        height: 8em;
+        height: 8.5em;
         background-color: #fb383b;
         padding: 0.5em;
         border-radius: 50%;
@@ -1536,7 +1539,7 @@ i {
         border-radius: 50%;
       }
       .teamimg {
-        height: 140px;
+        height: 150px;
       }
       .teamcard .h3 {
         font-weight: 500;
