@@ -920,11 +920,10 @@ i {
       background: #fb383b; }
 
 #workSection {
-  background: url(../img/work-bg.jpg);
+  background: url(../img/clients.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
-  filter: grayscale(100%); }
+  background-position: center; }
   #workSection .overlay {
     background: rgba(34, 34, 34, 0.7);
     padding: 80px 0; }
