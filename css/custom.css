@@ -151,7 +151,18 @@ i {
     right: 15px; }
     #navigration .header #showsidenav img {
       width: 15px; }
-
+@media (max-width: 552px) {
+        h2 {
+          font-size: 50px !important; }
+        #homeSection .txt-area h1 {
+          font-size: 60px; }
+        #featureSection .col-lg-7 {
+          margin-bottom: 200px; }
+          #featureSection .col-lg-7 .img-box .img01 {
+            width: 90%;
+            margin-right: 0px; }
+          #featureSection .col-lg-7 .img-box .img02 {
+            width: 90%; } }
 #navigration .nav-item {
   list-style: none;
   display: inline-block; }
@@ -163,6 +174,15 @@ i {
     line-height: 1;
     padding: 35px 15px;
     transition: .4s; }
+    @media (max-width: 552px) {
+      .span1 {
+        font-size: 17px !important; } }
+    @media (max-width: 776px) {
+            .span1 {
+               font-size: 17px !important; } }
+     @media (max-width: 991px) {
+                  .span1 {
+                     font-size: 17px !important; } }
     #navigration .nav-item .nav-link .fa-angle-down {
       color: #fff;
       margin-left: 2px;
@@ -721,6 +741,10 @@ i {
         border-radius: 10px;
         filter: grayscale(100%);
         transition: .4s; }
+
+        #specialFeature  .txt-box {
+          width: 820px;
+          margin: auto; }
     #specialFeature .service-box .txt-box {
       background: #222429;
       position: relative;
@@ -730,6 +754,7 @@ i {
       padding-right: 65px;
       width: 85%;
       margin: auto; }
+
       #specialFeature .service-box .txt-box h4 {
         color: #fff; }
       #specialFeature .service-box .txt-box p {
@@ -904,7 +929,15 @@ i {
       margin-bottom: 30px; }
       .specialFeature2 .sec-header h2 span {
         color: #fb383b; }
-
+.dark-class #featureDetails .txt-box h3 { 
+  color: white;
+}
+.dark-class #featureDetails .txt-box p { 
+  color: rgba(255, 255, 255, 0.685);
+}
+.dark-class #featureDetails .txt-box li { 
+  color: rgba(255, 255, 255, 0.685);
+}
 #featureDetails {
   border-left: 1px solid #cbcbcc;
   padding-left: 30px; }
@@ -1043,7 +1076,18 @@ i {
       margin-bottom: 0; }
   #workSection .box-4 {
     border-right: none; }
-
+    .sec-header-work h2 {
+      color: black; }
+  .dark-class .sec-header-work h2 {
+    color: #fff; }
+.dark-class #contactSection .sec-header h2 {
+  color: #fff; }
+.dark-class #contactSection .sec-header p {
+    color: rgba(255, 255, 255, 0.685); }
+.dark-class #contactSection .txt .txtx {
+      color: rgba(255, 255, 255, 0.685); }
+.dark-class #contactSection .icon-box .txt p {
+        color: white; }
 #contactSection {
   margin-bottom: 20px; }
   #contactSection .sec-header {
@@ -1598,9 +1642,21 @@ i {
 }    
 .dark-class #featureSection .txt-box li {
   color: rgba(255, 255, 255, 0.719);
-}  
+}
+.dark-class .section1 .teamrow .h1 {
+  color: white;
+}
+.dark-class .section1 .teamrow .teamcolumn .teamcard {
+  background-color: rgba(100, 57, 64, 0.295);
+}
+.dark-class .section1 .teamrow .teamcolumn .teamcard .h3 {
+  color: white;
+}
+.dark-class .section1 .teamrow .teamcolumn .teamcard .p {
+  color: white;
+}
 .dark-class #specialFeature {
-        background: black;
+        background: rgba(0, 0, 0, 0.932);
         overflow: hidden;
         margin-bottom: 80px; }
         #specialFeature .sec-header {
