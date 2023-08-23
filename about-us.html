@@ -19,6 +19,59 @@
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="stylesheet" href="css/custom.css">
    <title>Coure Tech</title>
+   <style>
+
+      .dark-class {
+         color: white;
+         background-color: black;
+      }
+      .dark-class .section1 {
+         color: white;
+         background-color: rgba(0, 0, 0, 0.932);
+      }
+      .toggleButton {
+         width: 4rem;
+         height: 2rem;
+         padding-top: 8px;
+         margin-left: 120px;
+         position: relative;
+         display: inline-block;
+      }
+      .toggleButton input {
+         opacity: 0;
+      }
+      .roundButton {
+         background-color: black;
+         top: 0;
+         left: 0;
+         position: absolute;
+         right: 0;
+         bottom: 0;
+         cursor: pointer;
+      }
+      .roundButton:before {
+         left: 0;
+         bottom: 0;
+         position: absolute;
+         content: "";
+         background-color: grey;
+         transition: 1s;
+         height: 2rem;
+         width: 1.9rem;
+      }
+      input:checked+.roundButton {
+         background-color: white;
+      }
+      input:checked+.roundButton:before {
+         transform: translateX(2.2rem);
+      }
+      .roundButton.circle {
+         border-radius: 2rem;
+      }
+      .roundButton.circle:before {
+         border-radius: 50%;
+      }
+   </style>
 </head>
 <body>
 
@@ -51,10 +104,10 @@
                <li class="nav-item dropdown">
                   <a class="nav-link" data-toggle="collapse" href="#menu2" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Services <i class="fal fa-angle-down"></i></a>
                   <div id="menu2" class="dropdown-menus collapse">
-                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>Routing</span></a>
-                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>KYC</span></a>
-                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>Fraud Prevention</span></a>
-                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>Data Monetization</span></a>
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Aggregator Management(HUB)</span></a>
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">VAS Management(HUB)</span></a>
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">KYC(ANQ)</span></a>
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Routing(ANQ)</span></a>
                   </div>
                </li>
                <li class="nav-item dropdown">
@@ -81,6 +134,10 @@
                 </div>
              </li>
                <li class="nav-item"><a class="nav-link" href="contact.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Contact Us</a></li>
+               <label class = "toggleButton">
+                  <input type = "checkbox" id = "toggle">
+                  <div class = "roundButton circle" ></div>
+               </label>
             </ul>
          </div>
         <!-- <button class="btn font-btn get-quote d-none d-md-block"><i class="fal fa-chevron-right"></i> <span>Get A Quote</span></button> -->
@@ -281,6 +338,16 @@
    <!-- OWL CAROUSEL Plugin -->
    <script src="js/owl.carousel.min.js"></script>
    <script src="js/custom.js"></script>
+   <script>
+      // If the input checkbox is checked, activate dark mode by adding dark-class to the body
+      $('#toggle').change(() => {
+         if ($('#toggle').is(":checked")) {
+            $("body").addClass("dark-class");
+         } else {
+            $("body").removeClass("dark-class")
+         }
+      })
+   </script>
    <script>
 
    </script>
