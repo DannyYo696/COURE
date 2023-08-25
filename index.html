@@ -1,5 +1,12 @@
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="custom.js"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,7 +26,36 @@
     <link rel="stylesheet" href="css/custom.css">
     <title>Coure Tech</title>
    <style>
+    body {
+background: aliceblue;
+}
+.section-padding{
+padding:60px 0;
+}
+.brand-carousel {
+background: aliceblue;
+margin-top: 15%;
+}
+.owl-dots {
+text-align: center;
+margin-top: 4%;
+}
+.owl-dot {
+display: inline-block;
+height: 15px !important;
+width: 15px !important;
+background-color: #878787 !important;
+opacity: 0.8;
+border-radius: 50%;
+margin: 0 5px;
+}
+.owl-dot.active {
+background-color: #000 !important;
+}
 
+
+
+       
       .dark-class {
          color: white;
          background-color: rgba(0, 0, 0, 0.932);
@@ -736,84 +772,27 @@
  <div class="sec-header-work">
     <h2 style="text-align: center; font-size: 50px;">OUR CLIENTS</h2>
  </div><br>
- <section id="workSection" class="text-center">
-    <div class="overlay">
-       <div class="container">
-          <div class="row">
-             <div class="col-lg-3 col-md-6">
-                <div class="work-box">
-                   <div class="txt-box">
-                      <img src="img/africa.jpg" alt="" style="width: 180px; height: 80px;">
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3 col-md-6">
-                <div class="work-box box-2">
-                   <div class="txt-box">
-                      <img src="img/wwc.jpg" alt="" style="width: 180px; height: 80px;">
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3 col-md-6 mt-4 pt-1 mt-md-0 pt-md-0">
-                <div class="work-box box-3">
-                   <div class="txt-box">
-                      <img src="img/mobile.jpg" alt="" style="width: 180px; height: 80px;">
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3 col-md-6">
-                <div class="work-box box-4">
-                   <div class="txt-box">
-                      <img src="img/east.jpg" alt="" style="width: 180px; height: 80px;">
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
- </section><br><br>
-
-
- <div class="sec-header-work">
-   <h2 style="text-align: center; font-size: 50px;">OUR PARTNERS</h2>
-</div><br>
- <section id="workSection" class="text-center">
-    <div class="overlay">
-       <div class="container">
-          <div class="row">
-             <div class="col-lg-3 col-md-6">
-                <div class="work-box">
-                   <div class="txt-box">
-                      <img src="img/africa.jpg" alt="" style="width: 180px; height: 80px;">
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3 col-md-6">
-                <div class="work-box box-2">
-                   <div class="txt-box">
-                      <img src="img/wwc.jpg" alt="" style="width: 180px; height: 80px;">
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3 col-md-6 mt-4 pt-1 mt-md-0 pt-md-0">
-                <div class="work-box box-3">
-                   <div class="txt-box">
-                      <img src="img/mobile.jpg" alt="" style="width: 180px; height: 80px;">
-                   </div>
-                </div>
-             </div>
-             <div class="col-lg-3 col-md-6">
-                <div class="work-box box-4">
-                   <div class="txt-box">
-                      <img src="img/east.jpg" alt="" style="width: 180px; height: 80px;">
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
- </section>
-  
+ <div class="brand-carousel section-padding owl-carousel">
+  <div class="single-logo">
+    <img src="img/ruby.jpg" alt="">
+  </div>
+<div class="single-logo">
+    <img src="https://i.postimg.cc/pdMQjC5Q/brand-2.png" alt="">
+  </div>
+<div class="single-logo">
+    <img src="https://i.postimg.cc/B6qxYvgX/brand-3.png" alt="">
+  </div>
+<div class="single-logo">
+    <img src="https://i.postimg.cc/d14GzKHn/brand-4.png" alt="">
+  </div>
+<div class="single-logo">
+    <img src="https://i.postimg.cc/x8ZM13Sz/brand-5.png" alt="">
+  </div>
+<div class="single-logo">
+    <img src="https://i.postimg.cc/B6qxYvgX/brand-3.png" alt="">
+  </div>
+</div>
+ 
   
   
   
@@ -947,6 +926,25 @@
      <!-- OWL CAROUSEL Plugin -->
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
+    <script>
+      $('.brand-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  autoplay:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:5
+    }
+  }
+}) 
+
+   </script>
       <script>
       // If the input checkbox is checked, activate dark mode by adding dark-class to the body
       $('#toggle1').change(() => {
