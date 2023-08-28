@@ -1784,12 +1784,12 @@ i {
             .specialFeature2 .sec-header h2 span {
               color: #fb383b; }
       
- @media (max-width: 552px) {
-                .toggleButton {
+ @media screen and (max-width: 552px) {
+                #tb {
                   display: none; } }
-@media (max-width: 776px) {
-  .toggleButton {
+@media screen and (max-width: 776px) {
+  #tb {
     display: none; } }
-@media (max-width: 991px) {
-  .toggleButton {
+@media screen and (max-width: 991px) {
+  #tb {
     display: none; } }
