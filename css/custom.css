@@ -713,7 +713,18 @@ i {
       color: #fb383b; }
     #pricingSection .pricing-box:hover .font-btn span {
       color: #1d1e22; }
-
+@media (max-width: 552px) {
+        #feature-box {
+          width: auto !important;
+        height: 250px  !important; } }
+@media (max-width: 776px) {
+  #feature-box {
+    width: auto !important;
+  height: 250px  !important; } }
+@media (max-width: 991px) {
+  #feature-box {
+    width: auto !important;
+  height: 250px  !important; } }
 #specialFeature {
   background: #fff;
   overflow: hidden;
@@ -1773,3 +1784,12 @@ i {
             .specialFeature2 .sec-header h2 span {
               color: #fb383b; }
       
+ @media (max-width: 552px) {
+                .toggleButton {
+                  display: none; } }
+@media (max-width: 776px) {
+  .toggleButton {
+    display: none; } }
+@media (max-width: 991px) {
+  .toggleButton {
+    display: none; } }
