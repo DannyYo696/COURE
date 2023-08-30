@@ -20,7 +20,7 @@
     <title>Coure Tech</title>
    <style>
 
-      .dark-class {
+.dark-class {
          color: white;
          background-color: rgba(0, 0, 0, 0.932);
       }
@@ -33,6 +33,17 @@
          display: inline-block;
       }
       .toggleButton input {
+         opacity: 0;
+      }
+      .toggleButton1 {
+         width: 60px;
+         height: 25px;
+         padding-top: 8px;
+         margin-right: -170px;
+         position: relative;
+         display: inline-block;
+      }
+      .toggleButton1 input {
          opacity: 0;
       }
       .roundButton {
@@ -51,8 +62,21 @@
          content: "";
          background-color: grey;
          transition: 1s;
+         height: 25px;
+         width: 1.7rem;
+      }
+      @media screen and (min-width: 992px) {
+        .roundButton:before {
+          left: 0;
+         bottom: 0;
+         position: absolute;
+         content: "";
+         background-color: grey;
+         transition: 1s;
          height: 2rem;
          width: 1.9rem;
+        }
+        
       }
       input:checked+.roundButton {
          background-color: white;
@@ -72,74 +96,82 @@
    crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
 </head>
 <body>
-    <nav id="navigration" class="navbar fixed-top p-0">
-        <div class="container">
-           <!-- <a class="logo" href="#"><img src="img/logo.png" alt=""></a> -->
-           <a href="index.html" class=""><img src="img/coure.png" alt="" style="width: 90px;"> </a>
-           <div class="sidenav">
-              <div class="header">
-                 
-                 <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt=""> </a>
-              </div>
+   <nav id="navigration" class="navbar fixed-top p-0">
+      <div class="container">
+         <!-- <a class="logo" href="#"><img src="img/logo.png" alt=""></a> -->
+         <a href="index.html" class=""><img src="img/coure.png" alt="" style="width: 90px;"> </a>
+         <div class="sidenav">
+            <div class="header">
+               
+               <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt=""> </a>
+            </div>
             <ul class="mb-0">
-                 <li class="nav-item"><a class="nav-link" href="index.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Home</a></li>
-                 <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="collapse" href="#menu1" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Products <i class="fal fa-angle-down"></i></a>
-                    <div id="menu1" class="dropdown-menus collapse">
-                       <a class="dropdown-item" href="" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>DMS Platform</span></a>
-                       <a class="dropdown-item" href="anq.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>ANQ Platform</span></a>
-                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>HUB Platform</span></a>
-                       <!--<a class="dropdown-item" href="#"><span>Team</span></a>
-                       <a class="dropdown-item" href="#"><span>Coming Soon</span></a>
-                       <a class="dropdown-item" href="#"><span>Error 404</span></a>
-                       <a class="dropdown-item" href="#"><span>Site Down</span></a>-->
-                    </div>
-                 </li>
-                 <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="collapse" href="#menu2" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Services <i class="fal fa-angle-down"></i></a>
-                    <div id="menu2" class="dropdown-menus collapse">
-                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Aggregator Management(HUB)</span></a>
-                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">VAS Management(HUB)</span></a>
-                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">KYC(ANQ)</span></a>
-                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Routing(ANQ)</span></a>
-                    </div>
-                 </li>
-                 <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="collapse" href="#menu3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Resources <i class="fal fa-angle-down"></i></a>
-                    <div id="menu3" class="dropdown-menus collapse">
-                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>ANQ Documentation</span></a>
-                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>HUB Documentation</span></a>
-                       <!--<div class="dropdown-2">
-                          <a class="dropdown-item" data-toggle="collapse" href="#menu4"><span>Blog Details</span> <i class="fal fa-angle-right"></i></a>
-                          <div id="menu4" class="dropdown-menus-2 collapse">
-                             <a class="dropdown-item" href="#"><span>Blog Details 1</span></a>
-                             <a class="dropdown-item" href="#"><span>Blog Details 2</span></a>
-                             <a class="dropdown-item" href="#"><span>Blog Details 3</span></a>
-                          </div>
-                       </div>-->
-                    </div>
-                 </li>
-                 <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="collapse" href="#menu4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Company <i class="fal fa-angle-down"></i></a>
-                    <div id="menu4" class="dropdown-menus collapse">
-                       <a class="dropdown-item" href="about-us.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>About Us</span></a>
-                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>Career</span></a>
-                       <a class="dropdown-item" href="meet-the-team.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span>Meet The Team</span></a>
-                    </div>
-                 </li>
-                 <li class="nav-item"><a class="nav-link" href="contact.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Contact Us</a></li>
-                 <label class = "toggleButton">
-                    <input type = "checkbox" id = "toggle">
-                    <div class = "roundButton circle" ></div>
-                 </label>
-              </ul>
-           </div>
-          <!-- <button class="btn font-btn get-quote d-none d-md-block"><i class="fal fa-chevron-right"></i> <span>Get A Quote</span></button> -->
-           <div id="hamburger" class="d-lg-none">
-              <img src="img/icon/menu.png" class="img01" alt="">
-           </div>
-        </div>
-     </nav>
+               <li class="nav-item"><a class="nav-link" href="index.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Home</a></li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="collapse" href="#menu1" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Products <i class="fal fa-angle-down"></i></a>
+                  <div id="menu1" class="dropdown-menus collapse">
+                     <a class="dropdown-item" href="" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">DMS Platform</span></a>
+                     <a class="dropdown-item" href="anq.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">ANQ Platform</span></a>
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">HUB Platform</span></a>
+                     <!--<a class="dropdown-item" href="#"><span>Team</span></a>
+                     <a class="dropdown-item" href="#"><span>Coming Soon</span></a>
+                     <a class="dropdown-item" href="#"><span>Error 404</span></a>
+                     <a class="dropdown-item" href="#"><span>Site Down</span></a>-->
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="collapse" href="#menu2" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Services <i class="fal fa-angle-down"></i></a>
+                  <div id="menu2" class="dropdown-menus collapse">
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">KYC(ANQ)</span></a>
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Routing(ANQ)</span></a>
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Aggregator Management(HUB)</span></a>
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">VAS Management(HUB)</span></a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="collapse" href="#menu3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Resources <i class="fal fa-angle-down"></i></a>
+                  <div id="menu3" class="dropdown-menus collapse">
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Request for demo</span></a>
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Articles/Press release</span></a>
+                     
+                     <!--<div class="dropdown-2">
+                        <a class="dropdown-item" data-toggle="collapse" href="#menu4"><span>Blog Details</span> <i class="fal fa-angle-right"></i></a>
+                        <div id="menu4" class="dropdown-menus-2 collapse">
+                           <a class="dropdown-item" href="#"><span>Blog Details 1</span></a>
+                           <a class="dropdown-item" href="#"><span>Blog Details 2</span></a>
+                           <a class="dropdown-item" href="#"><span>Blog Details 3</span></a>
+                        </div>
+                     </div>-->
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="collapse" href="#menu4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Company <i class="fal fa-angle-down"></i></a>
+                  <div id="menu4" class="dropdown-menus collapse">
+                     <a class="dropdown-item" href="about-us.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">About Us</span></a>
+                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Career</span></a>
+                     <a class="dropdown-item" href="meet-the-team.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Meet The Team</span></a>
+                  </div>
+               </li>
+               <li class="nav-item"><a class="nav-link" href="contact.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Contact Us</a></li>
+               <label class = "toggleButton">
+                  <input type = "checkbox" id = "toggle">
+                  <div class = "roundButton circle" ></div>
+               </label>
+            </ul>
+         </div>
+         <div id="hamburgers" class="d-lg-none">
+          <label class = "toggleButton1">
+             <input type = "checkbox" id = "toggle1">
+             <div class = "roundButton circle" ></div>
+          </label>
+       </div>
+        <!-- <button class="btn font-btn get-quote d-none d-md-block"><i class="fal fa-chevron-right"></i> <span>Get A Quote</span></button> -->
+         <div id="hamburger" class="d-lg-none">
+            <img src="img/icon/menu.png" class="img01" alt="">
+         </div>
+         
+      </div>
+   </nav>
   
   
      <!-- ======================================== PAGE HEADER ======================================== -->
@@ -150,8 +182,8 @@
                  <div class="col">
                     <div class="txt text-center">
                        <div class="sec-header">
-                          <h2>ANQ PLATFORM<span></span></h2>
-                          <p><a href="index.html">HOME</a> <span>/</span> SERVICES</p>
+                          <h2 style="text-align: center;">ANQ PLATFORM<span></span></h2>
+                          <p><a href="index.html">HOME</a> <span>/</span> PRODUCTS</p>
                        </div>
                     </div>
                  </div>
@@ -166,11 +198,12 @@
            <div class="row">
               <div class="col">
                  <div class="sec-header">
-                    <h2>ANQ PLATFORM<span></span></h2>
+                    <h2 style="font-size: 55px;">ANQ Services<span></span></h2>
                  </div>
               </div>
            </div>
            <div class="row">
+            
               <div class="col-md-8 ">
                  <div class="column">
                     <div class="col-xl-4 col-md-6">
@@ -178,10 +211,9 @@
                         <!--<div class="img-box">
                              <img src="img/service01.jpg" alt="">
                           </div>-->
-                          <div class="txt-box" id="feature-box" style="padding-bottom: 70px; width: 700px; height: 200px;">
+                          <div class="txt-box" id="feature-box" style="padding-bottom: 70px; width: 600px; height: 200px;">
                              <h4>FRAUD PREVENTION (BANKS)</h4>
                              <p style="font-family: 'Lato', sans-serif; font-size: 15px;">Helps in minimizing losses, optimizing efficiencies, and protecting customers from fraudulent activities</p>
-                             <a class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
                           </div>
                        </div><br>
                     </div>
@@ -190,10 +222,9 @@
                         <!--<div class="img-box">
                              <img src="img/service02.jpg" alt="">
                           </div>-->
-                          <div class="txt-box" id="feature-box" style="padding-bottom: 70px; width: 700px; height: 200px;">
+                          <div class="txt-box" id="feature-box" style="padding-bottom: 70px; width: 600px; height: 200px;">
                              <h4>ROUTING SERVICES</h4>
                              <p style="font-family: 'Lato', sans-serif; font-size: 15px;">Enables Service Providers to verify the status of a phone number before initiating a route and ensuring that calls or messages are delivered correctly.</p>
-                             <A class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
                           </div>
                        </div><br>
                     </div>
@@ -202,10 +233,9 @@
                         <!--<div class="img-box">
                              <img src="img/service03.jpg" alt="">
                           </div>-->
-                          <div class="txt-box" id="feature-box" style="padding-bottom: 70px; width: 700px; height: 200px;">
-                             <h4>FRAUD PREVENTION (TELECO)</h4>
+                          <div class="txt-box" id="feature-box" style="padding-bottom: 70px; width: 600px; height: 200px;">
+                             <h4>FRAUD PREVENTION (TELCO)</h4>
                              <p style="font-family: 'Lato', sans-serif; font-size: 15px;">A real-time solution that achieves faster and more effective fraud detection by providing higher visibility of the operators’ exposure across channels.</p>
-                             <a class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
                           </div>
                        </div><br>
                     </div>
@@ -214,10 +244,9 @@
                         <!--<div class="img-box">
                              <img src="img/service01.jpg" alt="">
                           </div>-->
-                          <div class="txt-box" id="feature-box" style="padding-bottom: 70px; width: 700px; height: 200px;" >
+                          <div class="txt-box" id="feature-box" style="padding-bottom: 70px; width: 600px; height: 200px;" >
                              <h4>Know Your Customers (KYC)</h4>
                              <p style="font-family: 'Lato', sans-serif; font-size: 15px;">KYC service offers a simple way to clean and validate a large number of databases</p>
-                             <a class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
                           </div>
                        </div>
                     </div>
@@ -247,35 +276,37 @@
                     </div>-->
                  </div>
               </div>
-              <div class="col-md-4">
-                 <div id="featureDetails">
-                    <div class="row">
-                       <div class="col">
-                          <div class="img-box">
-                             <img src="img/anq.png" alt="">
-                          </div>
-                          <div class="txt-box">
-                             <h3 id="dark">OUR ANQ PLATFORM<span></span></h3>
-                             <p>All Number Query is a lookup platform that provides easy and quick access to information on various number/data resources. Our centralization of and access to large volumes of diversified data along with our processing capacity and intelligent algorithms has enabled us to build and apply real-time analytics on data that is being searched against or provided thus enabling more intelligent decisions and timely responses to business opportunities.</p>
-                          
-                             <a style="margin-top: 20px;" href="contact.html" class="btn layer-btn">DOWNLOAD ANQ HANDBOOK</a><br>
-                             <!--<p><strong style="font-size: 20px; color: black;">DOWNLOAD ANQ HANDBOOK </strong><a href="">here</a></p><br>-->
-                             <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                             <ul>
-                                <li><i class="fal fa-check"></i> Suspe ndisse suscipit sagittis leo.</li>
-                                <li><i class="fal fa-check"></i> Entum estibulum dignissim posuere.</li>
-                                <li><i class="fal fa-check"></i> If you are going to use a passage.</li>
-                                <li><i class="fal fa-check"></i> Entum estibulum dignissim posuere.</li>
-                                <li><i class="fal fa-check"></i> If you are going to use a passage.</li>
-                             </ul>-->
-                             <br><p>If you are interested in finding out how we can help your business through our ANQ Platform, please feel free to contact us at <a href="mailto:sales@coure-tech.com">sales@coure-tech.com</a>
-  
-                              or call <a href="tel:+(234)-1-631-1910">+(234)-1-280-9119</a></p>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-              </div>
+              
+              <div class="col-md-4" id="ft1">
+               <div id="featureDetails">
+                  <div class="row">
+                     <div class="col">
+                        <div class="img-box">
+                           <img src="img/anq.png" alt="">
+                        </div>
+                        <div class="txt-box">
+                           <h3 id="dark">OUR ANQ PLATFORM<span></span></h3>
+                           <p id="dark1" style="width: 400px;">All Number Query is a lookup platform that provides easy and quick access to information on various number/data resources. Our centralization of and access to large volumes of diversified data along with our processing capacity and intelligent algorithms has enabled us to build and apply real-time analytics on data that is being searched against or provided thus enabling more intelligent decisions and timely responses to business opportunities.</p>
+                        
+                           <a style="margin-top: 20px;" href="contact.html" class="btn layer-btn">DOWNLOAD ANQ HANDBOOK</a><br>
+                           <!--<p><strong style="font-size: 20px; color: black;">DOWNLOAD ANQ HANDBOOK </strong><a href="">here</a></p><br>-->
+                           <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                           <ul>
+                              <li><i class="fal fa-check"></i> Suspe ndisse suscipit sagittis leo.</li>
+                              <li><i class="fal fa-check"></i> Entum estibulum dignissim posuere.</li>
+                              <li><i class="fal fa-check"></i> If you are going to use a passage.</li>
+                              <li><i class="fal fa-check"></i> Entum estibulum dignissim posuere.</li>
+                              <li><i class="fal fa-check"></i> If you are going to use a passage.</li>
+                           </ul>-->
+                           <br><p id="dark2" style="width: 400px;">If you are interested in finding out how we can help your business through our ANQ Platform, please feel free to contact us at <a href="mailto:sales@coure-tech.com">sales@coure-tech.com</a>
+
+                            or call <a href="tel:+(234)-1-631-1910">+(234)-1-280-9119</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
            </div>
         </div>
      </section>
@@ -363,7 +394,7 @@
                      </div>
                      <button type="submit" class="btn" name="button"><i class="fal fa-envelope"></i></button>
                   </form>
-                  <span>Sign up for our latest news & articles. We won’t give you spam mails.</span>
+                  <span>Sign up for our latest news & articles. We won’t send you spam mails.</span>
                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -413,6 +444,16 @@
      <!-- OWL CAROUSEL Plugin -->
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
+     <script>
+      // If the input checkbox is checked, activate dark mode by adding dark-class to the body
+      $('#toggle1').change(() => {
+         if ($('#toggle1').is(":checked")) {
+            $("body").addClass("dark-class");
+         } else {
+            $("body").removeClass("dark-class")
+         }
+      })
+   </script>
    <script>
       // If the input checkbox is checked, activate dark mode by adding dark-class to the body
       $('#toggle').change(() => {
