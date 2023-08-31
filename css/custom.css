@@ -310,7 +310,7 @@ i {
   position: relative;
   margin-bottom: 100px; }
   #homeSection .slider-box {
-    background: url(../img/home-bg.jpg);
+    background: url(../img/home1.jpg);
     background-size: cover;
     background-position: center top;
     height: 100vh; }
@@ -344,7 +344,7 @@ i {
     background-repeat: no-repeat;
     background-position: right top; }
   #homeSection .slider-box2 {
-    background: url(../img/home-bg01.jpg);
+    background: url(../img/home2.jpg);
     background-size: cover;
     background-position: center center; }
   #homeSection .owl-carousel {
