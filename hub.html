@@ -99,7 +99,7 @@
    <nav id="navigration" class="navbar fixed-top p-0">
       <div class="container">
          <!-- <a class="logo" href="#"><img src="img/logo.png" alt=""></a> -->
-         <a href="index.html" class=""><img src="img/coure.png" alt="" style="width: 90px;"> </a>
+         <a href="index.html" class=""><img src="img/coure.png" alt="" style="width: 90px; margin-left: -80px;"> </a>
          <div class="sidenav">
             <div class="header">
                
@@ -110,9 +110,9 @@
                <li class="nav-item dropdown">
                   <a class="nav-link" data-toggle="collapse" href="#menu1" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Products <i class="fal fa-angle-down"></i></a>
                   <div id="menu1" class="dropdown-menus collapse">
-                     <a class="dropdown-item" href="" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">DMS Platform</span></a>
+                     <a class="dropdown-item" href="dms.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">DMS Platform</span></a>
                      <a class="dropdown-item" href="anq.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">ANQ Platform</span></a>
-                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">HUB Platform</span></a>
+                     <a class="dropdown-item" href="hub.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">HUB Platform</span></a>
                      <!--<a class="dropdown-item" href="#"><span>Team</span></a>
                      <a class="dropdown-item" href="#"><span>Coming Soon</span></a>
                      <a class="dropdown-item" href="#"><span>Error 404</span></a>
@@ -131,7 +131,7 @@
                <li class="nav-item dropdown">
                   <a class="nav-link" data-toggle="collapse" href="#menu3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Resources <i class="fal fa-angle-down"></i></a>
                   <div id="menu3" class="dropdown-menus collapse">
-                     <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Request for demo</span></a>
+                     <a class="dropdown-item" href="" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Request for demo</span></a>
                      <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Articles/Press release</span></a>
                      
                      <!--<div class="dropdown-2">
@@ -153,17 +153,22 @@
                   </div>
                </li>
                <li class="nav-item"><a class="nav-link" href="contact.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Contact Us</a></li>
-               <label class = "toggleButton">
-                  <input type = "checkbox" id = "toggle">
-                  <div class = "roundButton circle" ></div>
-               </label>
+               <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="collapse" href="#menu4"><button class="btn layer-btn" id="demobtn">Request Demo <i class="fal fa-angle-down"></i></button></a>
+                <div id="menu4" class="dropdown-menus collapse">
+                   <a class="dropdown-item" href="dms-demo.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">DMS Demo</span></a>
+                   <a class="dropdown-item" href="anq-demo.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">ANQ Demo</span></a>
+                   <a class="dropdown-item" href="hub-demo.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">HUB Demo</span></a>
+                </div>
+               </li>
+               
             </ul>
          </div>
          <div id="hamburgers" class="d-lg-none">
-          <label class = "toggleButton1">
+          <!--<label class = "toggleButton1">
              <input type = "checkbox" id = "toggle1">
              <div class = "roundButton circle" ></div>
-          </label>
+          </label>-->
        </div>
         <!-- <button class="btn font-btn get-quote d-none d-md-block"><i class="fal fa-chevron-right"></i> <span>Get A Quote</span></button> -->
          <div id="hamburger" class="d-lg-none">
@@ -171,8 +176,7 @@
          </div>
          
       </div>
-   </nav>
-  
+   </nav>  
   
      <!-- ======================================== PAGE HEADER ======================================== -->
      <section id="pageHeader">
