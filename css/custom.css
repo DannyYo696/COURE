@@ -313,7 +313,7 @@ i {
     background: url(../img/home1.jpg);
     background-size: cover;
     background-position: center top;
-    height: 100vh; }
+    height: 500px; }
     #homeSection .slider-box .overlay {
       background: rgba(34, 34, 34, 0.7);
       height: 100%; }
@@ -725,7 +725,27 @@ i {
   #feature-box {
     width: auto !important;
   height: 250px  !important; } }
-
+@media (max-width: 552px) {
+    #logoa {
+      width: 400px ; } }
+@media (max-width: 776px) {
+  #log1 {
+    display: none;
+    width: 300px !important; } }
+@media (min-width: 776px) {
+      #logoa {
+        display: none;
+        width: 300px !important; } }
+@media (max-width: 991px) {
+  .logoh {
+    width: 350px !important; } }
+@media (max-width: 1500px) {
+      .logoh {
+        width: 380px !important; } }
+@media (max-width: 768px) {
+          #homeSection .txt-area #logoa {
+            width: 200px ; } }
+    
 #specialFeature {
   background: #fff;
   overflow: hidden;
