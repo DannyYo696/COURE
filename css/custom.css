@@ -306,6 +306,100 @@ i {
   z-index: 5;
   transition: .4s; }
 
+
+#homeSections {
+    position: relative;
+    margin-bottom: 100px; }
+    #homeSections .slider-box {
+      background: url(../img/home1.jpg);
+      background-size: cover;
+      background-position: center top;
+      height: 500px; }
+      #homeSections .slider-box .overlay {
+        background: rgba(34, 34, 34, 0.7);
+        height: 100%; }
+      #homeSections .slider-box .txt-box {
+        height: 100vh;
+        position: relative; }
+        #homeSections .slider-box .txt-box .txt-area {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
+          #homeSections .slider-box .txt-box .txt-area p {
+            color: #fff;
+            font-size: 24px; }
+          #homeSections .slider-box .txt-box .txt-area h1 {
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 5px;
+            line-height: .9;
+            margin-bottom: 50px; }
+    #homeSections .slider-box:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 0;
+      background: url(../img/layer.png);
+      background-repeat: no-repeat;
+      background-position: right top; }
+    #homeSections .slider-box2 {
+      background: url(../img/home2.jpg);
+      background-size: cover;
+      background-position: center center; }
+    #homeSections .owl-carousel {
+      position: relative;
+      z-index: 0; }
+    #homeSections .owl-dots {
+      display: none; }
+    #homeSections .owl-nav {
+      display: block;
+      position: absolute;
+      top: 90%;
+      right: 10%;
+      transform: translate(-10%, -90%);
+      transition: .4s; }
+      #homeSections .owl-nav button {
+        width: 50px;
+        height: 50px;
+        display: block;
+        background: none;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 100px;
+        transition: .4s; }
+      #homeSections .owl-nav button:hover {
+        background: #fb383b;
+        color: #fff; }
+      #homeSections .owl-nav .owl-prev {
+        margin-bottom: 15px; }
+        #homeSections .owl-nav .owl-prev span {
+          opacity: 0; }
+      #homeSections .owl-nav .owl-next {
+        float: right; }
+        #homeSection .owl-nav .owl-next span {
+          opacity: 0; }
+      #homeSections .owl-nav .owl-prev::before,
+      #homeSections .owl-nav .owl-next::before {
+        font-size: 16px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        content: '\f053';
+        font-family: 'Font Awesome 5 pro';
+        transition: .4s; }
+      #homeSections .owl-nav .owl-next::before {
+        content: '\f054';
+        padding: 22px; }
+      #homeSections .owl-nav .owl-prev:focus {
+        outline: 0px dotted; }
+      #homeSections .owl-nav .owl-next:focus {
+        outline: 0px dotted; }
+      #homeSections .owl-nav .owl-prev:hover:before,
+      #homeSections .owl-nav .owl-next:hover:before {
+        color: #fff; }
+
+
+
 #homeSection {
   position: relative;
   margin-bottom: 100px; }
@@ -1917,4 +2011,95 @@ i {
     height: 450px; } }
 
 
-  
+
+#homeSections {
+      position: relative;
+      margin-bottom: 100px; }
+      #homeSections img {
+        background-size: cover;
+        width: 100%;
+        background-position: center top;
+        height: 500px; }
+        #homeSection .slider-box .overlay {
+          background: rgba(34, 34, 34, 0.7);
+          height: 100%; }
+        #homeSection .slider-box .txt-box {
+          height: 100vh;
+          position: relative; }
+          #homeSection .slider-box .txt-box .txt-area {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%); }
+            #homeSection .slider-box .txt-box .txt-area p {
+              color: #fff;
+              font-size: 24px; }
+            #homeSection .slider-box .txt-box .txt-area h1 {
+              color: #fff;
+              font-weight: 600;
+              letter-spacing: 5px;
+              line-height: .9;
+              margin-bottom: 50px; }
+      #homeSection .slider-box:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        background: url(../img/layer.png);
+        background-repeat: no-repeat;
+        background-position: right top; }
+      #homeSection .slider-box2 {
+        background: url(../img/home2.jpg);
+        background-size: cover;
+        background-position: center center; }
+      #homeSection .owl-carousel {
+        position: relative;
+        z-index: 0; }
+      #homeSection .owl-dots {
+        display: none; }
+      #homeSection .owl-nav {
+        display: block;
+        position: absolute;
+        top: 90%;
+        right: 10%;
+        transform: translate(-10%, -90%);
+        transition: .4s; }
+        #homeSection .owl-nav button {
+          width: 50px;
+          height: 50px;
+          display: block;
+          background: none;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 100px;
+          transition: .4s; }
+        #homeSection .owl-nav button:hover {
+          background: #fb383b;
+          color: #fff; }
+        #homeSection .owl-nav .owl-prev {
+          margin-bottom: 15px; }
+          #homeSection .owl-nav .owl-prev span {
+            opacity: 0; }
+        #homeSection .owl-nav .owl-next {
+          float: right; }
+          #homeSection .owl-nav .owl-next span {
+            opacity: 0; }
+        #homeSection .owl-nav .owl-prev::before,
+        #homeSection .owl-nav .owl-next::before {
+          font-size: 16px;
+          text-align: center;
+          color: rgba(255, 255, 255, 0.5);
+          content: '\f053';
+          font-family: 'Font Awesome 5 pro';
+          transition: .4s; }
+        #homeSection .owl-nav .owl-next::before {
+          content: '\f054';
+          padding: 22px; }
+        #homeSection .owl-nav .owl-prev:focus {
+          outline: 0px dotted; }
+        #homeSection .owl-nav .owl-next:focus {
+          outline: 0px dotted; }
+        #homeSection .owl-nav .owl-prev:hover:before,
+        #homeSection .owl-nav .owl-next:hover:before {
+          color: #fff; }
+    
