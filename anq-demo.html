@@ -1,0 +1,402 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/coure2.png">
+    <!-- GOOGLE FONTS CDN LINK -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- AOS ANIAMATION PLUGIN -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- OWL CAROUSEL PLUGIN -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- MAGNIFIC POPUP PLUGIN -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Coure Tech</title>
+   <style>
+
+.dark-class {
+         color: white;
+         background-color: rgba(0, 0, 0, 0.932);
+      }
+      .toggleButton {
+         width: 4rem;
+         height: 2rem;
+         padding-top: 8px;
+         margin-left: 120px;
+         position: relative;
+         display: inline-block;
+      }
+      .toggleButton input {
+         opacity: 0;
+      }
+      .toggleButton1 {
+         width: 60px;
+         height: 25px;
+         padding-top: 8px;
+         margin-right: -170px;
+         position: relative;
+         display: inline-block;
+      }
+      .toggleButton1 input {
+         opacity: 0;
+      }
+      .roundButton {
+         background-color: black;
+         top: 0;
+         left: 0;
+         position: absolute;
+         right: 0;
+         bottom: 0;
+         cursor: pointer;
+      }
+      .roundButton:before {
+         left: 0;
+         bottom: 0;
+         position: absolute;
+         content: "";
+         background-color: grey;
+         transition: 1s;
+         height: 25px;
+         width: 1.7rem;
+      }
+      @media screen and (min-width: 992px) {
+        .roundButton:before {
+          left: 0;
+         bottom: 0;
+         position: absolute;
+         content: "";
+         background-color: grey;
+         transition: 1s;
+         height: 2rem;
+         width: 1.9rem;
+        }
+        
+      }
+      input:checked+.roundButton {
+         background-color: white;
+      }
+      input:checked+.roundButton:before {
+         transform: translateX(2.2rem);
+      }
+      .roundButton.circle {
+         border-radius: 2rem;
+      }
+      .roundButton.circle:before {
+         border-radius: 50%;
+      }
+
+   </style>
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+   Integrity = "sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+   crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
+</head>
+<body>
+    <nav id="navigration" class="navbar fixed-top p-0">
+        <div class="container">
+           <!-- <a class="logo" href="#"><img src="img/logo.png" alt=""></a> -->
+           <a href="index.html" class=""><img src="img/coure.png" alt="" style="width: 90px; margin-left: -80px;"> </a>
+           <div class="sidenav">
+              <div class="header">
+                 
+                 <a href="#" class="d-lg-none" id="showsidenav"><img src="img/icon/letter-x.png" alt=""> </a>
+              </div>
+              <ul class="mb-0">
+                 <li class="nav-item"><a class="nav-link" href="index.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Home</a></li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="collapse" href="#menu1" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Products <i class="fal fa-angle-down"></i></a>
+                    <div id="menu1" class="dropdown-menus collapse">
+                       <a class="dropdown-item" href="dms.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">DMS Platform</span></a>
+                       <a class="dropdown-item" href="anq.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">ANQ Platform</span></a>
+                       <a class="dropdown-item" href="hub.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">HUB Platform</span></a>
+                       <!--<a class="dropdown-item" href="#"><span>Team</span></a>
+                       <a class="dropdown-item" href="#"><span>Coming Soon</span></a>
+                       <a class="dropdown-item" href="#"><span>Error 404</span></a>
+                       <a class="dropdown-item" href="#"><span>Site Down</span></a>-->
+                    </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="collapse" href="#menu2" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Services <i class="fal fa-angle-down"></i></a>
+                    <div id="menu2" class="dropdown-menus collapse">
+                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">KYC(ANQ)</span></a>
+                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Routing(ANQ)</span></a>
+                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Aggregator Management(HUB)</span></a>
+                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">VAS Management(HUB)</span></a>
+                    </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="collapse" href="#menu3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Resources <i class="fal fa-angle-down"></i></a>
+                    <div id="menu3" class="dropdown-menus collapse">
+                       <a class="dropdown-item" href="" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Request for demo</span></a>
+                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Articles/Press release</span></a>
+                       
+                       <!--<div class="dropdown-2">
+                          <a class="dropdown-item" data-toggle="collapse" href="#menu4"><span>Blog Details</span> <i class="fal fa-angle-right"></i></a>
+                          <div id="menu4" class="dropdown-menus-2 collapse">
+                             <a class="dropdown-item" href="#"><span>Blog Details 1</span></a>
+                             <a class="dropdown-item" href="#"><span>Blog Details 2</span></a>
+                             <a class="dropdown-item" href="#"><span>Blog Details 3</span></a>
+                          </div>
+                       </div>-->
+                    </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="collapse" href="#menu4" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Company <i class="fal fa-angle-down"></i></a>
+                    <div id="menu4" class="dropdown-menus collapse">
+                       <a class="dropdown-item" href="about-us.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">About Us</span></a>
+                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Career</span></a>
+                       <a class="dropdown-item" href="meet-the-team.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Meet The Team</span></a>
+                    </div>
+                 </li>
+                 <li class="nav-item"><a class="nav-link" href="contact.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Contact Us</a></li>
+                 <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="collapse" href="#menu4"><button class="btn layer-btn" id="demobtn">Request Demo <i class="fal fa-angle-down"></i></button></a>
+                  <div id="menu4" class="dropdown-menus collapse">
+                     <a class="dropdown-item" href="dms-demo.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">DMS Demo</span></a>
+                     <a class="dropdown-item" href="anq-demo.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">ANQ Demo</span></a>
+                     <a class="dropdown-item" href="hub-demo.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">HUB Demo</span></a>
+                  </div>
+                 </li>
+                 
+              </ul>
+           </div>
+           <div id="hamburgers" class="d-lg-none">
+            <!--<label class = "toggleButton1">
+               <input type = "checkbox" id = "toggle1">
+               <div class = "roundButton circle" ></div>
+            </label>-->
+         </div>
+          <!-- <button class="btn font-btn get-quote d-none d-md-block"><i class="fal fa-chevron-right"></i> <span>Get A Quote</span></button> -->
+           <div id="hamburger" class="d-lg-none">
+              <img src="img/icon/menu.png" class="img01" alt="">
+           </div>
+           
+        </div>
+     </nav>  
+  
+     <!-- ======================================== PAGE HEADER ======================================== -->
+     <section id="pageHeader-demo">
+        <div class="overlay">
+           <div class="container">
+              <div class="row">
+                 <div class="col">
+                    <div class="txt text-center">
+                       <div class="sec-header">
+                          <h2 style="text-align: center;">REQUEST A DEMO<span></span></h2>
+                          <p><a href="index.html">HOME</a> <span>/</span> RESOURCES</p>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+  
+     <!-- ======================================== SPECIAL FEATURE ======================================== -->
+     <div class="row">
+        <div class="col">
+           
+        </div>
+     </div><br>
+     <section id="contactSection">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-6 mb-5 mb-lg-0">
+                 <div class="part1">
+                    
+                    <div class="sec-header">
+                        <h2 style=" margin-top: -100PX;">ANQ Demo<span></span></h2>
+                     </div>
+                    <div class="sec-header" style="text-align: center;" id="dms1">
+                        
+                       <img src="img/anq demo (2).png" alt="" style="width: 280px; height: 350px;" class="dms2">
+                    </div>
+                    
+                    
+                    
+                 </div>
+              </div>
+              <div class="col-lg-6">
+                 <form class="wow fadeInUpBig" data-wow-duration="1.5s">
+                    <div class="form-row">
+                       <div class="form-group col-md-6">
+                          <input type="text" class="form-control" placeholder="Your Name">
+                       </div>
+                       <div class="form-group col-md-6">
+                          <input type="email" class="form-control" placeholder="Email Address">
+                       </div>
+                       <div class="form-group col-md-6">
+                          <input type="number" class="form-control" placeholder="Phone Number">
+                       </div>
+                       <div class="form-group col-md-6">
+                          <input type="text" class="form-control" placeholder="Type Of Demo">
+                       </div>
+                       <div class="form-group col-12">
+                          <textarea class="form-control" rows="8" cols="80" placeholder="Enter Additional Details"></textarea>
+                       </div>
+                    </div>
+                    <button type="submit" class="btn layer-btn">REQUEST DEMO</button>
+                 </form>
+              </div>
+           </div>
+        </div>
+     </section><br><br><br><br>
+
+     
+  
+     <!-- ======================================== CONTACT AREA 2 ======================================== -->
+     <section id="contactArea">
+        <div class="container">
+           <div class="contact-box">
+              <div class="row">
+                 <div class="col-lg-9 mb-3 mb-lg-0">
+                    <div class="sec-header">
+                       <h2>READY TO WORK WITH US<span>?</span></h2>
+                    </div>
+                 </div>
+                 <div class="col-lg-3">
+                    <a href="contact.html" class="btn layer-btn">CONTACT US</a>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+  
+  
+  
+    <!-- ======================================== FOOTER SECTION ======================================== -->
+     <section id="footerSection">
+      <div class="container">
+         <div class="row">
+           <!-- <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+               <div class="footer-box">
+                  <a href="#" class=""><img src="img/coure.png" alt="" style="width: 90px;"> </a>
+                  <p class="about">COURE is a business process automation firm that focuses on the automation of repeatable business activities in an effort to increase efficiency and reduce time and cost related to performance of tasks.</p>
+               </div>
+            </div>-->
+            
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+               <div class="footer-box box3">
+                  <p class="title" style="font-family: Georgia, 'Times New Roman', Times, serif;">Contact Us</p>
+                  <div class="icon-box">
+                     <div class="icon">
+                        <i class="fal fa-map-marker-alt"></i>
+                     </div>
+                     <div class="txt">
+                        <span>   The Waterside,
+                           5 Admiralty Road
+                           Lekki Phase 1, Lagos,
+                           Nigeria.
+                           </span>
+                     </div>
+                  </div>
+                  <div class="icon-box">
+                     <div class="icon">
+                        <i class="fal fa-envelope"></i>
+                     </div>
+                     <div class="txt">
+                        <span>info@coure-tech.com</span>
+                     </div>
+                  </div>
+                  <div class="icon-box mb-0">
+                     <div class="icon">
+                        <i class="fal fa-phone-alt"></i>
+                     </div>
+                     <div class="txt">
+                        <span>+(234)-1-280-9119</span>
+                     </div>
+                  </div>
+                  <br><div class="social-links">
+                     <a href="https://web.facebook.com/couretech/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook"></i></a>
+                     <a href="https://twitter.com/couretech" target="_blank"><i class="fab fa-twitter"></i></a>
+                     <a href="https://instagram.com/coure_tech?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                     <a href="https://www.linkedin.com/company/coure-technologies-inc/" target="_blank" class="mr-0"><i class="fab fa-linkedin"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="footer-box box4">
+                  <p class="title">NEWSLETTER</p>
+                  <form>
+                     <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                     </div>
+                     <button type="submit" class="btn" name="button"><i class="fal fa-envelope"></i></button>
+                  </form>
+                  <span>Sign up for our latest news & articles. We won’t send you spam mails.</span>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+               <div class="footer-box box2">
+                  <p class="title" style="font-family: Georgia, 'Times New Roman', Times, serif;">Quick Links</p>
+                  <ul>
+                     <li><a href="#">- Data protection policy</a></li>
+                     <li><a href="#">- Privacy Notice</a></li>
+                     <li><a href="#">- ANQ Login</a></li>
+                     <li><a href="#">- Hub Login</a></li>
+                     <li><a href="#">- Support</a></li>
+                     <li class="mb-0"><a href="#">- Terms & Conditions</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="copy-right">
+            <div class="row">
+               <div class="col">
+                  <span>Copyright © 2023. Designed by Fatunse Daniel</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+  
+  
+     <!-- ======================================== SCROLL TO TOP ICON ======================================== -->
+     <a href="#" class="scroll-up">
+        <i class="fal fa-chevron-up"></i>
+     </a>
+  
+  
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/font-awesome-pro.js"></script>
+     <!-- SCROLL ANIAMATION Plugin -->
+     <script src="js/wow.min.js"></script>
+     <!-- MIXIT UP Plugin -->
+     <script src="js/mixitup.min.js"></script>
+     <!-- MAGNIFIC POPUP Plugin -->
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <!-- CounterUp Plugin -->
+     <script src="js/jquery.counterup.min.js"></script>
+     <script src="js/jquery.waypoints.min.js"></script>
+     <!-- OWL CAROUSEL Plugin -->
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+     <script>
+        // If the input checkbox is checked, activate dark mode by adding dark-class to the body
+        $('#toggle1').change(() => {
+           if ($('#toggle1').is(":checked")) {
+              $("body").addClass("dark-class");
+           } else {
+              $("body").removeClass("dark-class")
+           }
+        })
+     </script>
+   <script>
+      // If the input checkbox is checked, activate dark mode by adding dark-class to the body
+      $('#toggle').change(() => {
+         if ($('#toggle').is(":checked")) {
+            $("body").addClass("dark-class");
+         } else {
+            $("body").removeClass("dark-class")
+         }
+      })
+   </script>
+</body>
+</html>
