@@ -1104,7 +1104,7 @@ i {
     #featureDetails .txt-box h3 span {
       color: #fb383b; }
   #featureDetails .txt-box p {
-    max-width: 500px;
+    max-width: fit-content;
     width: fit-content;
     color: #666;
     font-family: 'Rubik', sans-serif;
