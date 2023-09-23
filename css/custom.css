@@ -1486,6 +1486,7 @@ i {
         #pageHeader-contact .sec-header p span {
           color: #fff;
           margin: 0 5px; }
+
 #pageHeader-demo {
     background: url(../img/demo.jpg);
     background-size: cover;
@@ -2157,3 +2158,12 @@ i {
       .dms2 {
         display: none;
         width: 300px !important; } }
+
+@media (max-width: 776px) {
+          #homeSection .slider-box {
+          height: 650px  !important; } }
+@media (max-width: 776px) {
+            #homeSection .slider-box .txt-box .txt-area .txth1 {
+            margin-top: 50PX;
+            font-size: 50px  !important; } }
+
