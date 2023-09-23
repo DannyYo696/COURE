@@ -2161,7 +2161,7 @@ i {
 
 @media (max-width: 776px) {
           #homeSection .slider-box {
-          height: 650px  !important; } }
+          max-height: 800px  !important; } }
 @media (max-width: 776px) {
             #homeSection .slider-box .txt-box .txt-area .txth1 {
             margin-top: 50PX;
