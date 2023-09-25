@@ -1,5 +1,12 @@
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="custom.js"></script>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,7 +27,7 @@
     <title>Coure Tech</title>
    <style>
 
-.dark-class {
+      .dark-class {
          color: white;
          background-color: rgba(0, 0, 0, 0.932);
       }
@@ -90,7 +97,6 @@
       .roundButton.circle:before {
          border-radius: 50%;
       }
-
    </style>
    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
    Integrity = "sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
@@ -111,9 +117,9 @@
                  <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="collapse" href="#menu1" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Products <i class="fal fa-angle-down"></i></a>
                     <div id="menu1" class="dropdown-menus collapse">
-                       <a class="dropdown-item" href="" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">DMS</span></a>
+                       <a class="dropdown-item" href="dms.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">DMS</span></a>
                        <a class="dropdown-item" href="anq.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">ANQ</span></a>
-                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">HUB</span></a>
+                       <a class="dropdown-item" href="hub.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">HUB</span></a>
                        <!--<a class="dropdown-item" href="#"><span>Team</span></a>
                        <a class="dropdown-item" href="#"><span>Coming Soon</span></a>
                        <a class="dropdown-item" href="#"><span>Error 404</span></a>
@@ -132,8 +138,8 @@
                  <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="collapse" href="#menu3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Resources <i class="fal fa-angle-down"></i></a>
                     <div id="menu3" class="dropdown-menus collapse">
-                       
-                       <a class="dropdown-item" href="articles.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Articles/Press release</span></a>
+                       <a class="dropdown-item" href="" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Request for demo</span></a>
+                       <a class="dropdown-item" href="#" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">Articles/Press release</span></a>
                        
                        <!--<div class="dropdown-2">
                           <a class="dropdown-item" data-toggle="collapse" href="#menu4"><span>Blog Details</span> <i class="fal fa-angle-right"></i></a>
@@ -154,17 +160,22 @@
                     </div>
                  </li>
                  <li class="nav-item"><a class="nav-link" href="contact.html" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;">Contact Us</a></li>
-                 <label class = "toggleButton">
-                    <input type = "checkbox" id = "toggle">
-                    <div class = "roundButton circle" ></div>
-                 </label>
+                 <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="collapse" href="#menu5"><button class="btn layer-btn" id="demobtn">Request Demo <i class="fal fa-angle-down"></i></button></a>
+                  <div id="menu5" class="dropdown-menus collapse">
+                     <a class="dropdown-item" href="dms-demo.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">DMS</span></a>
+                     <a class="dropdown-item" href="anq-demo.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">ANQ</span></a>
+                     <a class="dropdown-item" href="hub-demo.html" style="font-family: Georgia, 'Times New Roman', Times, serif;"><span class="span1">HUB</span></a>
+                  </div>
+                 </li>
+                 
               </ul>
            </div>
            <div id="hamburgers" class="d-lg-none">
-            <label class = "toggleButton1">
+            <!--<label class = "toggleButton1">
                <input type = "checkbox" id = "toggle1">
                <div class = "roundButton circle" ></div>
-            </label>
+            </label>-->
          </div>
           <!-- <button class="btn font-btn get-quote d-none d-md-block"><i class="fal fa-chevron-right"></i> <span>Get A Quote</span></button> -->
            <div id="hamburger" class="d-lg-none">
@@ -172,166 +183,585 @@
            </div>
            
         </div>
-     </nav>
+     </nav>  
   
-  
-     <!-- ======================================== PAGE HEADER ======================================== -->
-     <section id="pageHeader-demo">
-        <div class="overlay">
-           <div class="container">
-              <div class="row">
-                 <div class="col">
-                    <div class="txt text-center">
-                       <div class="sec-header">
-                          <h2 style="text-align: center;">REQUEST A DEMO<span></span></h2>
-                          <p><a href="index.html">HOME</a> <span>/</span> RESOURCES</p>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </section>
-  
-     <!-- ======================================== SPECIAL FEATURE ======================================== -->
-     <div class="row">
-        <div class="col">
-           
-        </div>
-     </div><br>
-     <section id="contactSection">
-        <div class="container">
-           <div class="row">
-              <div class="col-lg-6 mb-5 mb-lg-0">
-                 <div class="part1">
-                    
-                    <div class="sec-header">
-                        <h2 style=" margin-top: -100PX;">DMS Demo<span></span></h2>
-                     </div>
-                    <div class="sec-header" style="text-align: center;" id="dms1">
-                        
-                       <img src="img/dms demo.png" alt="" style="width: 280px; height: 350px;" class="dms2">
-                    </div>
-                    
-                    
-                    
-                 </div>
-              </div>
-              <div class="col-lg-6">
-                 <form class="wow fadeInUpBig" data-wow-duration="1.5s">
-                    <div class="form-row">
-                       <div class="form-group col-md-6">
-                          <input type="text" class="form-control" placeholder="Your Name">
-                       </div>
-                       <div class="form-group col-md-6">
-                          <input type="email" class="form-control" placeholder="Email Address">
-                       </div>
-                       <div class="form-group col-md-6">
-                          <input type="number" class="form-control" placeholder="Phone Number">
-                       </div>
-                       <div class="form-group col-md-6">
-                          <input type="text" class="form-control" placeholder="Type Of Demo">
-                       </div>
-                       <div class="form-group col-12">
-                          <textarea class="form-control" rows="8" cols="80" placeholder="Enter Additional Details"></textarea>
-                       </div>
-                    </div>
-                    <button type="submit" class="btn layer-btn">REQUEST DEMO</button>
-                 </form>
-              </div>
-           </div>
-        </div>
-     </section><br><br><br><br>
-
-     <br><section id="contactSection">
-        <div class="container">
-           <div class="row">
-              <div class="col-lg-6 mb-5 mb-lg-0">
-                 <div class="part1">
-                    
-                    <div class="sec-header">
-                        <h2 style=" margin-top: -100PX;">HUB Demo<span></span></h2>
-                     </div>
-                    <div class="sec-header" style="text-align: center;">
-                        
-                       <img src="img/hub demo.png" alt="" style="width: 280px; height: 350px;" class="">
-                    </div>
-                    
-                    
-                    
-                 </div>
-              </div>
-              <div class="col-lg-6">
-                 <form class="wow fadeInUpBig" data-wow-duration="1.5s">
-                    <div class="form-row">
-                       <div class="form-group col-md-6">
-                          <input type="text" class="form-control" placeholder="Your Name">
-                       </div>
-                       <div class="form-group col-md-6">
-                          <input type="email" class="form-control" placeholder="Email Address">
-                       </div>
-                       <div class="form-group col-md-6">
-                          <input type="number" class="form-control" placeholder="Phone Number">
-                       </div>
-                       <div class="form-group col-md-6">
-                          <input type="text" class="form-control" placeholder="Type Of Demo">
-                       </div>
-                       <div class="form-group col-12">
-                          <textarea class="form-control" rows="8" cols="80" placeholder="Enter Additional Details"></textarea>
-                       </div>
-                    </div>
-                    <button type="submit" class="btn layer-btn">REQUEST DEMO</button>
-                 </form>
-              </div>
-           </div>
-        </div>
-     </section><br><br><br><br>
+     <!-- ======================================== HOME SECTION ======================================== -->
+   <section id="homeSection">
+    <div class="owl-carousel">
+       <div class="slider-box slider-box1">
+          <div class="overlay">
+             <div class="container">
+                <div class="row">
+                   <div class="col">
+                      <div class="txt-box">
+                         <div class="txt-area">
+                           <img src="img/coure.png" alt="" id="logoa">
+                           <img src="img/coure.png" alt="" class="logoh" id="log1">
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="slider-box slider-box2">
+          <div class="overlay">
+             <div class="container">
+                <div class="row">
+                   <div class="col">
+                      <div class="txt-box" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                         <div class="txt-area">
+                            <h1 style="font-size: 70px;">ALL NUMBER QUERY (ANQ)</h1>
+                            <p style="font-family: sans-ser;">All Number Query is a lookup platform that provides easy and quick access to information on various number/data resources.</p>
+                            <a href="anq.html" class="btn layer-btn">DISCOVER MORE</a>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="slider-box slider-box1">
+          <div class="overlay">
+             <div class="container">
+                <div class="row">
+                   <div class="col">
+                      <div class="txt-box">
+                         <div class="txt-area">
+                            <h1 style=" font-size: 70px;" class="txth1">Device Management System (DMS)</h1>
+                            <p style="font-family: sans-ser;">Our web-based application is meticulously designed to empower banks, Payment Terminal Service Providers (PTSPs), and merchants with a comprehensive suite of tools for efficiently monitoring and reporting their financial transactions.</p>
+                            <a href="dms.html" class="btn layer-btn">DISCOVER MORE</a>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="slider-box slider-box2">
+          <div class="overlay">
+             <div class="container">
+                <div class="row">
+                   <div class="col">
+                      <div class="txt-box" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                         <div class="txt-area">
+                            <h1 style="font-size: 70px;">HUB</h1>
+                            <p style="font-family: sans-ser;">HUB is an innovative platform designed to enable message delivery and to support the various stakeholders in the messaging value chain.</p>
+                            <a href="hub.html" class="btn layer-btn">DISCOVER MORE</a>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
 
 
-    <br> <section id="contactSection">
-        <div class="container">
-           <div class="row">
-              <div class="col-lg-6 mb-5 mb-lg-0">
-                 <div class="part1">
-                    
-                    <div class="sec-header">
-                        <h2 style=" margin-top: -100PX;">ANQ Demo<span></span></h2>
-                     </div>
-                    <div class="sec-header" style="text-align: center;">
-                        
-                       <img src="img/anq demo (2).png" alt="" style="width: 280px; height: 350px;" class="">
-                    </div>
-                    
-                    
-                    
-                 </div>
-              </div>
-              <div class="col-lg-6">
-                 <form class="wow fadeInUpBig" data-wow-duration="1.5s">
-                    <div class="form-row">
-                       <div class="form-group col-md-6">
-                          <input type="text" class="form-control" placeholder="Your Name">
-                       </div>
-                       <div class="form-group col-md-6">
-                          <input type="email" class="form-control" placeholder="Email Address">
-                       </div>
-                       <div class="form-group col-md-6">
-                          <input type="number" class="form-control" placeholder="Phone Number">
-                       </div>
-                       <div class="form-group col-md-6">
-                          <input type="text" class="form-control" placeholder="Type Of Demo">
-                       </div>
-                       <div class="form-group col-12">
-                          <textarea class="form-control" rows="8" cols="80" placeholder="Enter Additional Details"></textarea>
-                       </div>
-                    </div>
-                    <button type="submit" class="btn layer-btn">REQUEST DEMO</button>
-                 </form>
-              </div>
-           </div>
-        </div>
-     </section>
-  
+
+ <!-- ======================================== FEATURE SECTION ======================================== -->
+ <section id="featureSection">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-7">
+             <div class="img-box">
+                <img src="img/DMS.png" class="img01 wow slideInLeft" data-wow-duration="1.5s" alt="">                 
+               
+                
+             </div>
+             <div class="img-box" style="margin-top: -100px;">
+               <img src="img/anq.png" class="img01 wow slideInLeft" data-wow-duration="1.5s" alt=""> 
+            </div>
+            <div class="img-box">
+               <img src="img/hub.png" class="img01 wow slideInLeft" data-wow-duration="1.5s" alt=""> 
+            </div>
+          </div>
+          <div class="col-lg-5">
+             <div class="txt-box">
+                <div class="sec-header">
+                   <h2 style=" font-family: Teko; font-size: 60px;">WE’RE THE BEST AT WHAT WE DO<span></span></h2>
+                   <h4 style="line-height: 25px;">WE ARE COMMITTED TO PROVIDING OUR CUSTOMERS EXCEPTIONAL SERVICE WHILE OFFERING OUR EMPLOYEES THE BEST TRAINING</h4>
+                   <p>We are a leading platform services provider established to enable businesses achieve their objectives through the integration of innovative digital solutions that provide insightful information for decision making. Technology is our forte and we have a track record of leveraging it to support businesses. 
+                     Incorporated in the United States of America in 1998 and locally in 2008, we are at the forefront of providing accurate, secure, timely and relevant data to our varied clientele base. With over two decades of experience in building platforms, we have distinguished ourselves as a clear leader in this space with solutions such as our All Number Query (ANQ) and Hub Platforms alongside our newest product Device Management System (DMS).</p>
+                </div>
+                <div class="part2">
+                   <ul>
+                      <li><i class="fal fa-check"></i> Accurate provision of relevant data</li>
+                      <li><i class="fal fa-check"></i> Secure provison of relevant data</li>
+                      <li><i class="fal fa-check"></i> Timely provison of data</li>
+                   </ul>
+                   <div class="since">
+                      <span>SINCE <br>1998</span>
+                   </div>
+                </div>
+                <a href="about-us.html" class="btn layer-btn">DISCOVER MORE</a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+
+
+ <!-- ======================================== SERVICE SECTION ======================================== -->
+ <section id="serviceSection">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+             <div class="sec-header"><br>
+                <h2 style="font-size: 40px; line-height: 50px;">WE SHAPE THE PERFECT SOLUTIONS<span></span></h2>
+                <p style="font-size: 18px;">We offer World class web based solutions that meets the needs of different businesses by seamlessly infusing technology into our clients’ daily processes without a downtime.</p>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                <div class="txt-area">
+                   <h3>01</h3>
+                   <h4 style="font-size: 25px; font-family: Teko;">ROUTING  <br> SERVICES</h4>
+                </div>
+                <div class="img-box">
+                   <img src="img/icon/uiux.png" alt="" class="img01">
+                   <img src="img/icon/uiux02.png" alt="" class="img02">
+                </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                <div class="txt-area">
+                   <h3>02</h3>
+                   <h4 style="font-size: 25px; font-family: Teko;">OPEN <br>BANKING</h4>
+                </div>
+                <div class="img-box">
+                   <img src="img/icon/app-development.png" alt="" class="img01">
+                   <img src="img/icon/app-development02.png" alt="" class="img02">
+                </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                <div class="txt-area">
+                   <h3>03</h3>
+                   <h4 style="font-size: 25px; font-family: Teko;">FRAUD <br>PREVENTION</h4>
+                </div>
+                <div class="img-box">
+                   <img src="img/icon/content-writing.png" alt="" class="img01">
+                   <img src="img/icon/content-writing02.png" alt="" class="img02">
+                </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                <div class="txt-area">
+                   <h3>04</h3>
+                   <h4 style="font-size: 25px; font-family: Teko;">KYC <br>SERVICES</h4>
+                </div>
+                <div class="img-box">
+                   <img src="img/icon/digital-marketing.png" alt="" class="img01">
+                   <img src="img/icon/digital-marketing02.png" alt="" class="img02">
+                </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                <div class="txt-area">
+                   <h3>05</h3>
+                   <h4 style="font-size: 25px; font-family: Teko;">SMS <br>DELIVERY</h4>
+                </div>
+                <div class="img-box">
+                   <img src="img/icon/graphic-design.png" alt="" class="img01">
+                   <img src="img/icon/graphic-design02.png" alt="" class="img02">
+                </div>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+             <div class="service-box wow slideInRight" data-wow-duration="1.5s">
+                <div class="txt-area">
+                   <h3>06</h3>
+                   <h4 style="font-size: 25px; font-family: Teko;">VALUE ADDED <br>SERVICES</h4>
+                </div>
+                <div class="img-box">
+                   <img src="img/icon/web-development.png" alt="" class="img01">
+                   <img src="img/icon/web-development02.png" alt="" class="img02">
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+
+
+
+ <!-- ======================================== PORTFOLIO SECTION ======================================== -->
+ <!--<section id="portfolioSection">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-6">
+             <div class="sec-header">
+                <h2>WORK SHOWCASE<span>.</span></h2>
+             </div>
+          </div>
+          <div class="col-lg-6">
+             <div class="indicator float-lg-right">
+                <span class="mixer active" data-filter="all">ALL</span>
+                <span class="mixer" data-filter=".web">WEB</span>
+                <span class="mixer" data-filter=".branding">BRANDING</span>
+                <span class="mixer" data-filter=".graphic">GRAPHIC</span>
+                <span class="mixer" data-filter=".photography">PHOTOGRAPHY</span>
+             </div>
+          </div>
+       </div>
+       <div id="portfolio">
+          <div class="row">
+             <div class="col-md-6 col-lg-4 mix web">
+                <div class="portfolio-box">
+                   <div class="img-box">
+                      <a href="#portfolioPreview01" class="popup-with-zoom-anim">
+                         <img src="img/portfolio-1.jpg" class="img-fluid" alt="">
+                      </a>
+                      <div id="portfolioPreview01" class="zoom-anim-dialog mfp-hide portfolio-preview">
+                         <div class="row">
+                            <div class="col-md-6 mb-5 mb-lg-0">
+                               <div class="img-box">
+                                  <img src="img/portfolio-1.jpg" class="img-fluid" alt="">
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                               <div class="description">
+                                  <h4>CLOTHING WEBSITE</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, doloribus, voluptas. Facere, hic quae cupiditate velit a, autem sunt dolor.</p>
+                                  <ul>
+                                     <li><i class="fal fa-file-alt"></i> Project : <span>Website</span></li>
+                                     <li><i class="fad fa-user-tie"></i> Client : <span>KhadiGhar</span></li>
+                                     <li><i class="fal fa-code"></i> Langages : <span>HTML, CSS, Javascript</span></li>
+                                     <li class="mb-0"><i class="fal fa-external-link"></i> Preview : <a href="#" target="_blank">www.khadighar.com</a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="hover-txt">
+                      <span class="category">WEB</span>
+                      <p>CLOTHING SITE</p>
+                   </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 mix branding photography">
+                <div class="portfolio-box">
+                   <div class="img-box">
+                      <a href="#portfolioPreview02" class="popup-with-zoom-anim">
+                         <img src="img/portfolio-2.jpg" class="img-fluid" alt="">
+                      </a>
+                      <div id="portfolioPreview02" class="zoom-anim-dialog mfp-hide portfolio-preview">
+                         <div class="row">
+                            <div class="col-md-6 mb-5 mb-lg-0">
+                               <div class="img-box">
+                                  <img src="img/portfolio-2.jpg" class="img-fluid" alt="">
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                               <div class="description">
+                                  <h4>CLOTHING WEBSITE</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, doloribus, voluptas. Facere, hic quae cupiditate velit a, autem sunt dolor.</p>
+                                  <ul>
+                                     <li><i class="fal fa-file-alt"></i> Project : <span>Website</span></li>
+                                     <li><i class="fad fa-user-tie"></i> Client : <span>KhadiGhar</span></li>
+                                     <li><i class="fal fa-code"></i> Langages : <span>HTML, CSS, Javascript</span></li>
+                                     <li class="mb-0"><i class="fal fa-external-link"></i> Preview : <a href="#" target="_blank">www.khadighar.com</a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="hover-txt">
+                      <span class="category">WEB</span>
+                      <p>CLOTHING SITE</p>
+                   </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 mix web graphic">
+                <div class="portfolio-box">
+                   <div class="img-box">
+                      <a href="#portfolioPreview03" class="popup-with-zoom-anim">
+                         <img src="img/portfolio-3.jpg" class="img-fluid" alt="">
+                      </a>
+                      <div id="portfolioPreview03" class="zoom-anim-dialog mfp-hide portfolio-preview">
+                         <div class="row">
+                            <div class="col-md-6 mb-5 mb-lg-0">
+                               <div class="img-box">
+                                  <img src="img/portfolio-3.jpg" class="img-fluid" alt="">
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                               <div class="description">
+                                  <h4>CLOTHING WEBSITE</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, doloribus, voluptas. Facere, hic quae cupiditate velit a, autem sunt dolor.</p>
+                                  <ul>
+                                     <li><i class="fal fa-file-alt"></i> Project : <span>Website</span></li>
+                                     <li><i class="fad fa-user-tie"></i> Client : <span>KhadiGhar</span></li>
+                                     <li><i class="fal fa-code"></i> Langages : <span>HTML, CSS, Javascript</span></li>
+                                     <li class="mb-0"><i class="fal fa-external-link"></i> Preview : <a href="#" target="_blank">www.khadighar.com</a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="hover-txt">
+                      <span class="category">WEB</span>
+                      <p>CLOTHING SITE</p>
+                   </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 mix photography graphic">
+                <div class="portfolio-box">
+                   <div class="img-box">
+                      <a href="#portfolioPreview04" class="popup-with-zoom-anim">
+                         <img src="img/portfolio-4.jpg" class="img-fluid" alt="">
+                      </a>
+                      <div id="portfolioPreview04" class="zoom-anim-dialog mfp-hide portfolio-preview">
+                         <div class="row">
+                            <div class="col-md-6 mb-5 mb-lg-0">
+                               <div class="img-box">
+                                  <img src="img/portfolio-4.jpg" class="img-fluid" alt="">
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                               <div class="description">
+                                  <h4>CLOTHING WEBSITE</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, doloribus, voluptas. Facere, hic quae cupiditate velit a, autem sunt dolor.</p>
+                                  <ul>
+                                     <li><i class="fal fa-file-alt"></i> Project : <span>Website</span></li>
+                                     <li><i class="fad fa-user-tie"></i> Client : <span>KhadiGhar</span></li>
+                                     <li><i class="fal fa-code"></i> Langages : <span>HTML, CSS, Javascript</span></li>
+                                     <li class="mb-0"><i class="fal fa-external-link"></i> Preview : <a href="#" target="_blank">www.khadighar.com</a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="hover-txt">
+                      <span class="category">WEB</span>
+                      <p>CLOTHING SITE</p>
+                   </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 mix branding graphic web">
+                <div class="portfolio-box">
+                   <div class="img-box">
+                      <a href="#portfolioPreview05" class="popup-with-zoom-anim">
+                         <img src="img/portfolio-5.jpg" class="img-fluid" alt="">
+                      </a>
+                      <div id="portfolioPreview05" class="zoom-anim-dialog mfp-hide portfolio-preview">
+                         <div class="row">
+                            <div class="col-md-6 mb-5 mb-lg-0">
+                               <div class="img-box">
+                                  <img src="img/portfolio-5.jpg" class="img-fluid" alt="">
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                               <div class="description">
+                                  <h4>CLOTHING WEBSITE</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, doloribus, voluptas. Facere, hic quae cupiditate velit a, autem sunt dolor.</p>
+                                  <ul>
+                                     <li><i class="fal fa-file-alt"></i> Project : <span>Website</span></li>
+                                     <li><i class="fad fa-user-tie"></i> Client : <span>KhadiGhar</span></li>
+                                     <li><i class="fal fa-code"></i> Langages : <span>HTML, CSS, Javascript</span></li>
+                                     <li class="mb-0"><i class="fal fa-external-link"></i> Preview : <a href="#" target="_blank">www.khadighar.com</a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="hover-txt">
+                      <span class="category">WEB</span>
+                      <p>CLOTHING SITE</p>
+                   </div>
+                </div>
+             </div>
+             <div class="col-md-6 col-lg-4 mix web photography">
+                <div class="portfolio-box">
+                   <div class="img-box">
+                      <a href="#portfolioPreview06" class="popup-with-zoom-anim">
+                         <img src="img/portfolio-6.jpg" class="img-fluid" alt="">
+                      </a>
+                      <div id="portfolioPreview06" class="zoom-anim-dialog mfp-hide portfolio-preview">
+                         <div class="row">
+                            <div class="col-md-6 mb-5 mb-lg-0">
+                               <div class="img-box">
+                                  <img src="img/portfolio-6.jpg" class="img-fluid" alt="">
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                               <div class="description">
+                                  <h4>CLOTHING WEBSITE</h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, doloribus, voluptas. Facere, hic quae cupiditate velit a, autem sunt dolor.</p>
+                                  <ul>
+                                     <li><i class="fal fa-file-alt"></i> Project : <span>Website</span></li>
+                                     <li><i class="fad fa-user-tie"></i> Client : <span>KhadiGhar</span></li>
+                                     <li><i class="fal fa-code"></i> Langages : <span>HTML, CSS, Javascript</span></li>
+                                     <li class="mb-0"><i class="fal fa-external-link"></i> Preview : <a href="#" target="_blank">www.khadighar.com</a></li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="hover-txt">
+                      <span class="category">WEB</span>
+                      <p>CLOTHING SITE</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>-->
+
+
+ <!-- ======================================== PRICING SECTION ======================================== -->
+ <!--<section id="pricingSection">
+    <div class="container">
+       <div class="row">
+          <div class="col">
+             <div class="sec-header text-center">
+                <h2>CHOOSE YOUR PLAN<span>.</span></h2>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-4">
+             <div class="pricing-box wow bounceInLeft" data-wow-duration="2s">
+                <h4>Basic Plan</h4>
+                <h3>$49</h3>
+                <ul>
+                   <li>Graphic Design</li>
+                   <li>Web Design</li>
+                   <li>UI/UX</li>
+                   <li>HTML/CSS</li>
+                   <li>Seo Marketing</li>
+                   <li>Business Analysis</li>
+                </ul>
+                <a href="#" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i> <span>Discover More</span></a>
+             </div>
+          </div>
+          <div class="col-md-4">
+             <div class="pricing-box wow bounceInLeft" data-wow-duration="2s">
+                <h4>Premium Plan</h4>
+                <h3>$149</h3>
+                <ul>
+                   <li>Graphic Design</li>
+                   <li>Web Design</li>
+                   <li>UI/UX</li>
+                   <li>HTML/CSS</li>
+                   <li>Seo Marketing</li>
+                   <li>Business Analysis</li>
+                </ul>
+                <a href="#" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i> <span>Discover More</span></a>
+             </div>
+          </div>
+          <div class="col-md-4">
+             <div class="pricing-box wow bounceInLeft" data-wow-duration="2s">
+                <h4>Standard Plan</h4>
+                <h3>$99</h3>
+                <ul>
+                   <li>Graphic Design</li>
+                   <li>Web Design</li>
+                   <li>UI/UX</li>
+                   <li>HTML/CSS</li>
+                   <li>Seo Marketing</li>
+                   <li>Business Analysis</li>
+                </ul>
+                <a href="#" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i> <span>Discover More</span></a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+
+
+ <section id="specialFeature">
+    <div class="container">
+       <div class="row">
+          <div class="col">
+             <div class="sec-header">
+                <h2>CHOOSE YOUR PLAN<span>.</span></h2>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col">
+             <div class="owl-carousel">
+                <div class="service-box">
+                   <div class="img-box">
+                      <img src="img/service01.jpg" alt="">
+                   </div>
+                   <div class="txt-box">
+                      <h4>OUR BEST SERVICE</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maxime hic.</p>
+                      <a href="service.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
+                   </div>
+                </div>
+                <div class="service-box">
+                   <div class="img-box">
+                      <img src="img/service02.jpg" alt="">
+                   </div>
+                   <div class="txt-box">
+                      <h4>OUR BEST SERVICE</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maxime hic.</p>
+                      <a href="service.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
+                   </div>
+                </div>
+                <div class="service-box">
+                   <div class="img-box">
+                      <img src="img/service03.jpg" alt="">
+                   </div>
+                   <div class="txt-box">
+                      <h4>OUR BEST SERVICE</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maxime hic.</p>
+                      <a href="service.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
+                   </div>
+                </div>
+                <div class="service-box">
+                   <div class="img-box">
+                      <img src="img/service02.jpg" alt="">
+                   </div>
+                   <div class="txt-box">
+                      <h4>OUR BEST SERVICE</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maxime hic.</p>
+                      <a href="service.html" class="btn font-btn"><i class="fal fa-chevron-right" aria-hidden="true"></i></a>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>-->
+
+
+
+
+
+
+
+ <!-- ======================================== WORK SECTION ======================================== -->
+ <div class="sec-header-work">
+    <h3 style="text-align: center; font-size: 40px;">OUR CLIENTS & PARTNERS</h3>
+ </div><br>
+ <section id="homeSections" >
+   <div>
+      <img src="img/Partners and Clients logos.png"  alt="">
+   </div>
+</section>
+
+
+ 
   
   
   
@@ -356,7 +786,7 @@
   
   
   
-    <!-- ======================================== FOOTER SECTION ======================================== -->
+     <!-- ======================================== FOOTER SECTION ======================================== -->
      <section id="footerSection">
       <div class="container">
          <div class="row">
@@ -435,7 +865,7 @@
          <div class="copy-right">
             <div class="row">
                <div class="col">
-                  <span>Copyright © 2023. Designed by Fatunse Daniel</span>
+                  <span>Copyright © 2023 COURE. All Rights Reserved.</span>
                </div>
             </div>
          </div>
@@ -465,16 +895,35 @@
      <!-- OWL CAROUSEL Plugin -->
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
-     <script>
-        // If the input checkbox is checked, activate dark mode by adding dark-class to the body
-        $('#toggle1').change(() => {
-           if ($('#toggle1').is(":checked")) {
-              $("body").addClass("dark-class");
-           } else {
-              $("body").removeClass("dark-class")
-           }
-        })
-     </script>
+    <script>
+      $('.brand-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  autoplay:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:5
+    }
+  }
+}) 
+
+   </script>
+      <script>
+      // If the input checkbox is checked, activate dark mode by adding dark-class to the body
+      $('#toggle1').change(() => {
+         if ($('#toggle1').is(":checked")) {
+            $("body").addClass("dark-class");
+         } else {
+            $("body").removeClass("dark-class")
+         }
+      })
+   </script>
    <script>
       // If the input checkbox is checked, activate dark mode by adding dark-class to the body
       $('#toggle').change(() => {
